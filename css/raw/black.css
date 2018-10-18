@@ -830,7 +830,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #col_messages { box-shadow: inset 1px 0 0 0 #222; }
 
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg { color: #4f3f00 !important; }
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg { background: #d6b940; color: #4f3f00 !important; }
 
 .c-message:hover .c-message__broadcast_preamble_outer, .c-message:hover .c-message__broadcast_preamble { color: #949494; }
 
@@ -2445,7 +2445,7 @@ input[type="text"].p-emoji_picker__input:focus { border-color: #545454; box-shad
 
 .rxn.menu_rxn .ts_icon, .c-reaction.menu_rxn .ts_icon, .c-reaction_add.menu_rxn .ts_icon, .c-member_slug.menu_rxn .ts_icon { color: rgba(230, 230, 230, 0.25); }
 
-a.c-member_slug--mention, a.c-member_slug--mention:hover { background-color: #082538; color: #363636; }
+a.c-member_slug--mention, a.c-member_slug--mention:hover { background-color: #947c18; color: #60c1fb; }
 
 .modal { background-color: #222; border: 0; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
 
@@ -2823,6 +2823,8 @@ ts-jumper ts-jumper-container { background: #222; box-shadow: 0 1px 10px rgba(0,
 
 ts-jumper ts-jumper-help, ts-jumper .p-jumper__help { background: #222; color: #949494; }
 
+ts-jumper input[type=text].p-jumper__input { background: #363636;  }
+
 ts-jumper input[type=text] { border: 1px solid #000 !important; color: #e6e6e6; }
 
 ts-jumper input[type=text]:focus { border: 1px solid rgba(54, 54, 54, 0.8) !important; color: #e6e6e6; }
@@ -2837,9 +2839,9 @@ ts-jumper ol li .channel_not_member, ts-jumper ol li .team_username, ts-jumper o
 
 ts-jumper ol li .unread_count { background: #bf360c; color: #e6e6e6; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
 
-ts-jumper ol li.highlighted { background: #535353 !important; color: #e6e6e6 !important; }
+ts-jumper ol li.highlighted { /*background: #535353 !important;*/ color: #e6e6e6 !important; }
 
-ts-jumper ol:not(.keyboard_active) li:hover { background: #535353 !important; color: #e6e6e6 !important; }
+ts-jumper ol:not(.keyboard_active) li:hover { /*background: #535353 !important;*/ color: #e6e6e6 !important; }
 
 ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .member_real_name + .member_username, ts-jumper ol li.highlighted .member_username + .member_real_name, ts-jumper ol li.highlighted i.presence_icon, ts-jumper ol li.highlighted ts-icon, ts-jumper ol:not(.keyboard_active) li:hover .channel_not_member, ts-jumper ol:not(.keyboard_active) li:hover .member_real_name + .member_username, ts-jumper ol:not(.keyboard_active) li:hover .member_username + .member_real_name, ts-jumper ol:not(.keyboard_active) li:hover i.presence_icon, ts-jumper ol:not(.keyboard_active) li:hover ts-icon { color: #e6e6e6; }
 
@@ -4064,3 +4066,8 @@ comments { box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.25); }
 .para_menu a.trigger.pilcrow { filter: grayscale(2) brightness(1.8); }
 
 .para_menu a.trigger.pilcrow:hover, .para_menu a.trigger.pilcrow.active { filter: grayscale(2) brightness(2); }
+
+/* Overrides */
+code { background-color: #535353; color: #85c5ff; } /* Change color: to whatever font color you want */
+.c-mrkdwn__pre, .c-mrkdwn__quote { background: #535353 !important; background-color: #535353 !important; color: #ffffff !important; }
+code.special_formatting, .c-mrkdwn__code, .c-mrkdwn__code a, .c-mrkdwn__pre a { color: #e16170 !important; background-color: #2c2d30 !important; }
